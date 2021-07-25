@@ -29,22 +29,27 @@
   }
 
   &__input {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
     width: 90%;
     height: 41px;
     padding-bottom: 12px;
     margin-bottom: 35px;
     font-size: 15px;
+    opacity: 70%;
     background-color: transparent;
     border: none;
     color: $primeColor;
     outline: none;
     border-bottom: 1px solid $primeColor;
     resize: none;
-    transition: border-bottom 0.4s ease-in-out;
+    transition: border-bottom, opacity 0.4s ease-in-out;
 
     &:hover,
     &:focus {
-      border-bottom: 2px solid $btnColor;
+      font-family: Poppins, sans-serif;
+      border-bottom: 1px solid $btnColor;
+      opacity: 100%;
     }
 
     @media (max-width: $tabletWidth) {
